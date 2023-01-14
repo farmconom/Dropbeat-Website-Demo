@@ -1,0 +1,21 @@
+section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 0;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+button{
+  cursor: pointer;
+  -webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}

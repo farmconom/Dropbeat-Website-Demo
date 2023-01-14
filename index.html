@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no, target-densityDpi=device-dpi" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" href="./images/twitter-card.jpg">
+  <meta property="og:title" content="Drop Beat"/>
+  <meta property="og:description" content="The best dance and music teaching website."/>
+  <meta property="og:image" content="./images/dancer-bg.png"/>
+  <meta property="og:image:type" content="image/jpg" />
+  <meta name="description" content="Hello, my name is Prakasit or you can call me Farm. I really enjoy and have fun with programming. I will have new projects in the future. I hope you will like my work. Have a good day :)" />
+  <meta name="robots" content="index, follow">
+  <title>Drop Beat</title>
+
+  <link rel="icon" type="image/x-icon" href="./images/icon-logo.jpg">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- fa icon -->
+  <script src="https://kit.fontawesome.com/575cf36350.js" crossorigin="anonymous"></script>
+  
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="./css/body.css" />
+  <link rel="stylesheet" type="text/css" href="./css/header.css" />
+  <link rel="stylesheet" type="text/css" href="./css/main-page/00-main.css" />
+  <link rel="stylesheet" type="text/css" href="./css/main-page/01-home.css" />
+  <link rel="stylesheet" type="text/css" href="./css/main-page/02-classes.css" />
+  <link rel="stylesheet" type="text/css" href="./css/main-page/03-ballet.css" />
+  <link rel="stylesheet" type="text/css" href="./css/main-page/04-opening.css" />
+  <link rel="stylesheet" type="text/css" href="./css/main-page/05-shortcode.css" />
+  <link rel="stylesheet" type="text/css" href="./css/main-page/06-map.css" />
+  <link rel="stylesheet" type="text/css" href="./css/footer.css" />
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <!-- gsap for scroll-trigger -->
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>  
+  
+</head>
+<body>
+  <header id="head-nav">
+    <figure id="home-logo">
+      <img onclick="refreshPage()" src="./images/logo.png" alt="drop beat logo">
+    </figure>
+    <nav class="item-nav" id="item-nav">
+      <ul id="ul-nav">
+        <li><span class="btn-train">TRAININGS</span></li>
+        <li><span class="btn-class">CLASSES</span></li>
+        <li><span class="btn-shows">SHOWS</span></li>
+        <li><span class="btn-short">SHORTCODES</span></li>
+        <li><span class="btn-contact">CONTACT</span></li>
+      </ul>
+    </nav>
+    <div class="ham-menu" id="ham-menu">
+      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+  </header>
+
+  <main>
+    <!-- home -->
+    <section class="home">
+      <article>
+        <h1>DANCE BEAT</h1>
+        <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magn</p>
+        <a href="./read-more.html"><button>About Us</button></a>
+        <button>Contact Us</button>
+      </article>
+      <figure>
+        <img src="./images/img-1.png" alt="home bg">
+      </figure>
+    </section>
+
+    <!-- classes -->
+    <section class="classes">
+      <article>
+        <h3>WELCOME NEW STUDENTS!</h3>
+        <p>Sign up now to receive a 25-minute taster lesson - completely free!</p>
+        <a href="./read-more.html"><button>Click To Sigup</button></a>
+      </article>
+
+      <article>
+        <h3>CLASSES</h3>
+        <div class="grid-box">
+        <div class="grid-classes"> 
+          <div onclick="location.href='./read-more.html';">Dancing</div>
+          <div onclick="location.href='./read-more.html';">Man</div>
+          <div onclick="location.href='./read-more.html';">Dancer</div>
+          <div onclick="location.href='./read-more.html';">People</div>
+          <div onclick="location.href='./read-more.html';">Girls</div>
+          <div onclick="location.href='./read-more.html';">Battle Dancing</div>
+        </div>
+        <figure>
+          <img src="./images/img-2.png" alt="CLASSES bg">
+        </figure>
+        </div>
+        <a href="./read-more.html"><button>Read More</button></a>
+      </article>
+    </section>
+
+    <!-- BALLET -->
+    <section class="ballet">
+      <!-- bg -->
+      <figure>
+        <img src="./images/dancer-bg.png" alt="ballet bg">
+      </figure>
+      <article>
+        <h3>BALLET DANCER</h3>
+        <p>amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+        <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoconsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+        <a href="./read-more.html"><button>Click To Sigup</button></a>
+      </article>
+    </section>
+
+    <!-- opening -->
+    <section class="opening">
+      <h3>OPENING HOURS</h3>
+      <p>amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+
+      <div class="grid-opening">
+        <h4>Hip Hop Dance</h4><span></span>
+        <h4>07:00 - 21:00</h4>
+        <h4>Ballet</h4><span></span>
+        <h4>09:00 - 21:00</h4>
+        <h4>Break Dance</h4><span></span>
+        <h4>18:00 - 24:00</h4>
+        <h4>Salsa</h4><span></span>
+        <h4>18:00 - 22:00</h4>
+        <h4>Tab Dancing</h4><span></span>
+        <h4>19:00 - 23:00</h4>
+      </div>
+    </section>
+
+    <!-- shortcode -->
+    <section class="shortcode">
+      <h3>SHORTCODE</h3>
+      <p>amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+
+      <article>
+        <div>
+          <h5>Heading 1</h5>
+          <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoconsectetur adipiscing</p>
+        </div>
+        <figure>
+          <img src="./images/img-3.png" alt="shortcode img1">
+        </figure>
+      </article>
+
+      <article>
+        <figure>
+          <img src="./images/img-4.png" alt="shortcode img2">
+        </figure>
+        <div>
+          <h5>Heading 2</h5>
+          <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoconsectetur adipiscing</p>
+        </div>
+      </article>
+
+      <article>
+        <div>
+          <h5>Heading 3</h5>
+          <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoconsectetur adipiscing</p>
+        </div>
+        <figure>
+          <img src="./images/img-5.png" alt="shortcode img3">
+        </figure>
+      </article>
+    </section>
+
+    <!-- map -->
+    <section class="map">
+      <h3>TESTIMONIAL</h3>
+      <p>amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+
+      <article>
+        <form>
+          <input type="text" placeholder="Name">
+          <input type="number" placeholder="Phone Number">
+          <input type="email" placeholder="Email">
+          <textarea placeholder="Write your Message here..."></textarea>
+          <button>SEND</button>
+        </form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.72953617523!2d-0.24202378955592238!3d51.52877143118414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z4Lil4Lit4LiZ4LiU4Lit4LiZIOC4quC4q-C4o-C4suC4iuC4reC4suC4k-C4suC4iOC4seC4geC4ow!5e0!3m2!1sth!2sth!4v1673284504144!5m2!1sth!2sth" width="50%" height="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="lovation"></iframe>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <article>
+      <div>
+        <h6>Address</h6>
+        <ul class="ul-add">
+          <li><i class="fa-solid fa-location-dot"></i><p id="space-p">London 145 United Kingdom</p></li>
+          <li><i class="fa-solid fa-phone"></i><p id="num-li">+7586656566<br/><br/>+9876543210</p></li>
+          <li><i class="fa-solid fa-envelope"></i><p>mail@domain.com</p></li>
+        </ul>
+      </div>
+
+      <div>
+        <h6>Opening time</h6>
+          <div class="grid-open-footer">
+            <p>Hip Hop Dance</p><span></span>
+            <p>07:00 - 17:00</p>
+            <p>Ballet</p><span></span>
+            <p>09:00 - 12:00</p>
+            <p>Break Dance</p><span></span>
+            <p>18:00 - 24:00</p>
+            <p>Salsa</p><span></span>
+            <p>11:00 - 18:00</p>
+            <p>Tab Dancing</p><span></span>
+            <p>08:00 - 19:00</p>         
+        </div>
+      </div>
+
+      <div>
+        <h6>Newsletter</h6>
+        <div class="newsletter-box">
+          <input type="email" placeholder="Enter your Email">
+          <a href="./read-more.html"><button>SUBSCRIBE</button></a>
+          
+          <ul>
+            <li onclick="location.href='./read-more.html';"><i class="fa-brands fa-facebook-f fa-xl"></i></li>
+            <li onclick="location.href='./read-more.html';"><i class="fa-brands fa-twitter fa-xl"></i></li>
+            <li onclick="location.href='./read-more.html';"><i class="fa-brands fa-linkedin-in fa-xl"></i></li>            
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <div class="copyright">
+      <p>2045 All Rights Reserved. By HTML Design</p>
+    </div>
+  </footer>
+
+  <!-- scroll up button -->
+  <span class="top hide-arrow"><i class="fa-solid fa-circle-chevron-up"></i></span>
+
+  <!-- JS -->
+  <script src="./js/scroll-up-button.js"></script>
+  <script src="./js/navBar.js"></script>
+  <script src="./js/navBar-btn.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+header {
+    width: 100%;
+    height: 3rem;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+    transition: all .2s;
+
+    -webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+header figure {
+    z-index: 3;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: .4rem;
+    height: 100%;
+    transition: all .1s;
+}
+header img {
+    height: 80%;
+    cursor: pointer;
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: block;
+    pointer-events: auto;
+    opacity: 1;
+    transition: all .2s;
+}
+header ul {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    float: right;
+    font-size: 1rem;
+    gap: 0;
+}
+header ul li {
+    margin: 0 1rem;
+    transition: all .2s;
+}
+header ul li span {
+    cursor: pointer;
+    border-bottom: 0px solid #003c61;
+    transition: all .1s;
+}
+header ul li span:hover {
+    border-bottom: 2px solid #003c61;
+}
+
+/* ham menu */
+.ham-menu {
+    position: absolute;
+    top: 25%;
+    right: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    opacity: 0;
+    transition: all .2s;
+    pointer-events: none;
+}
+.fa-bars {
+    z-index: 2;
+    font-size: 1.6rem;
+    opacity: 1;
+    cursor: pointer;
+    transition: all .2s;
+}
+.fa-xmark { 
+    z-index: 1;
+    font-size: 1.8rem;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* media query */
+
+@media screen and (max-width: 762px) {
+    .ham-menu {
+        opacity: 1;
+        pointer-events: auto;
+
+    }
+    header nav {
+        opacity: 0;
+        pointer-events: none;
+
+    }
+  }

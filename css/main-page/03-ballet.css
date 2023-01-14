@@ -1,0 +1,57 @@
+.ballet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+
+}
+.ballet figure{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.ballet img {
+    height: 100%;
+    opacity: .5;
+    margin-top: 5%;
+}
+
+.ballet article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    height: 100%;
+}
+
+.ballet h3 {
+    text-align: center;
+}
+.ballet p {
+    margin: 2rem;
+    text-align: center;
+}
+
+.ballet article button {
+    margin: 2rem;
+    float: left;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    border: 0px;
+    border-radius: 5px;
+    color: #fff;
+    background: #003c61;
+    transform: scale(1);
+    transition: all .2s;
+}
+.ballet article button:hover {
+    transform: scale(1.06);
+}

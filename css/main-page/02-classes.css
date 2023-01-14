@@ -1,0 +1,131 @@
+.classes {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* WELCOME NEW STUDENTS */
+.classes article:nth-of-type(1) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.classes article:nth-of-type(1) h3 {
+    text-align: center;
+}
+.classes h3 {
+    margin: 0 1rem 2rem 1rem;
+}
+.classes p {
+    text-align: center;
+    margin: 0 1rem;
+}
+
+/* CLASSES */
+.classes article:nth-of-type(2) {
+    padding: 0 0 0 5%;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+}
+.grid-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.grid-classes {
+    width: 72%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.8rem;
+}
+.grid-classes div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #b3b3b3;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.1rem; 
+    transition: all .2s;
+    cursor: pointer;
+}
+.grid-classes div:hover{
+    background: #ff5333;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.classes figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28%;
+    height: 75%;
+}
+.classes img {
+    margin-left: 1rem;
+    width: 90%;
+}
+
+/* btn */
+.classes article button {
+    margin: 2rem;
+    float: left;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    border: 0px;
+    border-radius: 5px;
+    color: #fff;
+    background: #003c61;
+    transform: scale(1);
+    transition: all .2s;
+}
+.classes article button:hover {
+    transform: scale(1.06);
+}
+.classes article:nth-of-type(2) button {
+    margin: 0;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* media query */
+
+@media screen and (max-width: 760px) {
+    .classes figure {
+        display: none;
+    }
+    .grid-box {
+        width: 95%;
+    }
+    .grid-classes {
+        width: 95%;
+    }
+  }
+@media screen and (max-width: 494px) {
+    .classes h3 {
+        font-size: 2rem;
+    }
+  }
+@media screen and (max-width: 452px) {
+    .grid-box {
+        justify-content: center;
+    }
+    .grid-classes {
+        height: 90%;
+        width: 80%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        gap: 1rem;
+    }
+    .classes article:nth-of-type(2) button {
+        float: left;
+      position: relative;
+      left: 9.5%;
+    }
+  }

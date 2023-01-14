@@ -1,0 +1,57 @@
+.shortcode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150vh;
+
+}
+.shortcode h3 {
+    margin: 2rem;
+    text-align: center;
+}
+.shortcode > p {
+    margin: 1rem 1rem 4rem 1rem;
+    text-align: center;
+}
+
+.shortcode article {
+    width: 80%;
+    height: 30vh;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+.shortcode article div {
+    background: #eeeee6;
+    border-radius: 10px;
+    width: 75%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.shortcode article h5{
+    font-size: calc(2vw + 200%);
+    font-weight: 600;
+    margin-bottom: .2rem;
+}
+.shortcode article figure {
+    height: 100%;
+    width: 30vh;
+}
+.shortcode article img {
+    width: 14rem;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* media query */
+
+@media screen and (max-width: 508px) {
+    .shortcode article figure {
+        display: none;
+    }
+    .shortcode article div {
+        width: 100%;
+    }
+  }
