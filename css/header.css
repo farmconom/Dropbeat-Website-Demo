@@ -48,6 +48,7 @@ header ul {
 }
 header ul li {
     margin: 0 1rem;
+    -webkit-tap-highlight-color: transparent;
     transition: all .2s;
 }
 header ul li span {

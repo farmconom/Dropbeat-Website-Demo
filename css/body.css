@@ -80,6 +80,7 @@ body {
 	white-space: nowrap;
 	font-size: 3rem;
 	border-radius: 50%;
+	-webkit-tap-highlight-color: transparent;
 
 	-webkit-user-select: none;
 	-moz-user-select: none;
