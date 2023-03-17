@@ -63,7 +63,7 @@ body {
     font-family: 'Raleway', sans-serif;	
 }
 /* preload images */
-body::after {
+body::before {
 	content: url(../../images/dancer-bg.png)
 			 url(../../images/icon-logo.jpg)
 			 url(../../images/img-1.png)
