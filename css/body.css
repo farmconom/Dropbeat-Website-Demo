@@ -64,14 +64,14 @@ body {
 }
 /* preload images */
 body::after {
-	content: url(/images/dancer-bg.png)
-			 url(/images/icon-logo.jpg)
-			 url(/images/img-1.png)
-			 url(/images/img-2.png)
-			 url(/images/img-3.png)
-			 url(/images/img-4.png)
-			 url(/images/img-5.png)
-			 url(/images/logo.png);
+	content: url(../../images/dancer-bg.png)
+			 url(../../images/icon-logo.jpg)
+			 url(../../images/img-1.png)
+			 url(../../images/img-2.png)
+			 url(../../images/img-3.png)
+			 url(../../images/img-4.png)
+			 url(../../images/img-5.png)
+			 url(../../images/logo.png);
 
 	display: none; 
 }
